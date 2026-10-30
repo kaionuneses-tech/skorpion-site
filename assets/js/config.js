@@ -26,7 +26,7 @@ const SKORPION = {
   empresa: {
     nome:         'Skorpion',
     tagline:      'Trading & Distribuição',
-    razaoSocial:  'Skorpion Importações e Exportações Ltda.',
+    razaoSocial:  'Skorpion Importações e Exportações Ltda',
     cnpj:         '39.696.826/0001-72',
 
     telefone:     '(27) 99823-5066',
