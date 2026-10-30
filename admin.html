@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área restrita | Skorpion</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a2135">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="admin-body">
+
+<!-- ============================ LOGIN =========================== -->
+<div class="login-screen" id="tela-login">
+  <div class="login-card">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Skorpion">
+      <span class="brand-text">
+        <span class="brand-name">Skorpion</span>
+        <span class="brand-tag">Área restrita</span>
+      </span>
+    </a>
+
+    <div id="login-alerta"></div>
+
+    <form id="form-login" novalidate>
+      <div class="form-grid" style="grid-template-columns:1fr">
+        <div class="field">
+          <label for="login-email">E-mail</label>
+          <input type="email" id="login-email" required autocomplete="username" placeholder="voce@skorpion.com.br">
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="login-senha">Senha</label>
+          <input type="password" id="login-senha" required autocomplete="current-password" placeholder="••••••••">
+          <span class="error-msg"></span>
+        </div>
+      </div>
+      <button class="btn btn--primary btn--lg btn--block" type="submit" id="btn-login" style="margin-top:18px">
+        Entrar
+      </button>
+    </form>
+
+    <p class="tiny muted center" style="margin:1.4rem 0 0">
+      O acesso é criado no painel do Supabase, em <strong>Authentication → Users</strong>.
+      Apenas usuários autenticados enxergam solicitações e editam o catálogo.
+    </p>
+    <p class="tiny center" style="margin:.6rem 0 0"><a href="index.html">← Voltar ao site</a></p>
+  </div>
+</div>
+
+<!-- ============================ PAINEL ========================== -->
+<div id="tela-admin" class="hide">
+
+  <header class="admin-header">
+    <div class="container">
+      <a class="brand" href="index.html" style="margin-right:0">
+        <img src="assets/img/logo.jpg" alt="Skorpion">
+        <span class="brand-text">
+          <span class="brand-name">Skorpion</span>
+          <span class="brand-tag">Painel administrativo</span>
+        </span>
+      </a>
+      <div class="admin-user">
+        <span id="usuario-email"></span>
+        <a class="btn btn--ghost-light btn--sm" href="index.html" target="_blank" rel="noopener">Ver site</a>
+        <button class="btn btn--ghost-light btn--sm" id="btn-sair">Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <div style="background:#fff;border-bottom:1px solid var(--line)">
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-btn is-active" data-tab="importacao">
+          Solicitações de importação <span class="pill hide" id="pill-importacao">0</span>
+        </button>
+        <button class="tab-btn" data-tab="revenda">
+          Solicitações de revenda <span class="pill hide" id="pill-revenda">0</span>
+        </button>
+        <button class="tab-btn" data-tab="produtos">Produtos</button>
+        <button class="tab-btn" data-tab="categorias">Categorias</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ---------------- Solicitações de importação ---------------- -->
+    <section class="tab-panel is-active" data-panel="importacao">
+      <div class="panel-head">
+        <h2>Solicitações de importação</h2>
+        <div class="btn-row">
+          <select class="chip" id="filtro-status-imp" style="padding:.5rem .9rem">
+            <option value="">Todos os status</option>
+            <option value="novo">Novo</option>
+            <option value="em_atendimento">Em atendimento</option>
+            <option value="fechado">Fechado</option>
+            <option value="perdido">Perdido</option>
+          </select>
+          <button class="btn btn--outline btn--sm" data-recarregar="importacao">Atualizar</button>
+        </div>
+      </div>
+      <div id="lista-importacao">
+        <div class="loading-row"><span class="spinner spinner--dark"></span> Carregando...</div>
+      </div>
+    </section>
+
+    <!-- ------------------ Solicitações de revenda ----------------- -->
+    <section class="tab-panel" data-panel="revenda">
+      <div class="panel-head">
+        <h2>Solicitações de revenda</h2>
+        <div class="btn-row">
+          <select class="chip" id="filtro-status-rev" style="padding:.5rem .9rem">
+            <option value="">Todos os status</option>
+            <option value="novo">Novo</option>
+            <option value="em_atendimento">Em atendimento</option>
+            <option value="fechado">Fechado</option>
+            <option value="perdido">Perdido</option>
+          </select>
+          <button class="btn btn--outline btn--sm" data-recarregar="revenda">Atualizar</button>
+        </div>
+      </div>
+      <div id="lista-revenda">
+        <div class="loading-row"><span class="spinner spinner--dark"></span> Carregando...</div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Produtos ----------------------- -->
+    <section class="tab-panel" data-panel="produtos">
+      <div class="panel-head">
+        <h2>Produtos</h2>
+        <div class="btn-row">
+          <div class="search-box" style="flex:0 1 260px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="busca-produtos" placeholder="Buscar produto..." autocomplete="off">
+          </div>
+          <button class="btn btn--primary btn--sm" id="btn-novo-produto">+ Novo produto</button>
+        </div>
+      </div>
+      <div id="tabela-produtos">
+        <div class="loading-row"><span class="spinner spinner--dark"></span> Carregando...</div>
+      </div>
+    </section>
+
+    <!-- -------------------------- Categorias ---------------------- -->
+    <section class="tab-panel" data-panel="categorias">
+      <div class="panel-head">
+        <h2>Categorias</h2>
+        <button class="btn btn--primary btn--sm" id="btn-nova-categoria">+ Nova categoria</button>
+      </div>
+      <div id="tabela-categorias">
+        <div class="loading-row"><span class="spinner spinner--dark"></span> Carregando...</div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ====================== MODAL — CATEGORIA ===================== -->
+<div class="modal-backdrop" id="modal-categoria">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-categoria">
+    <div class="modal-head">
+      <h3 id="titulo-modal-categoria">Nova categoria</h3>
+      <button class="icon-btn" data-fechar-modal aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <form id="form-categoria" novalidate>
+      <div class="modal-body">
+        <div id="alerta-categoria"></div>
+        <input type="hidden" id="cat-id">
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="cat-nome">Nome <span class="req">*</span></label>
+            <input type="text" id="cat-nome" required placeholder="Ex.: Alimentos e bebidas">
+            <span class="error-msg"></span>
+          </div>
+          <div class="field">
+            <label for="cat-slug">Slug</label>
+            <input type="text" id="cat-slug" placeholder="gerado automaticamente">
+            <span class="hint">Identificador usado em links. Deixe em branco para gerar pelo nome.</span>
+          </div>
+          <div class="field">
+            <label for="cat-ordem">Ordem de exibição</label>
+            <input type="number" id="cat-ordem" value="0" step="1">
+          </div>
+          <div class="field field--full">
+            <label for="cat-descricao">Descrição</label>
+            <textarea id="cat-descricao" style="min-height:80px"></textarea>
+          </div>
+          <div class="field field--full">
+            <label class="checkbox-line">
+              <input type="checkbox" id="cat-ativo" checked>
+              <span>Categoria ativa (aparece no site)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="btn btn--outline" data-fechar-modal>Cancelar</button>
+        <button type="submit" class="btn btn--primary" id="btn-salvar-categoria">Salvar categoria</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ======================= MODAL — PRODUTO ====================== -->
+<div class="modal-backdrop" id="modal-produto">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-produto">
+    <div class="modal-head">
+      <h3 id="titulo-modal-produto">Novo produto</h3>
+      <button class="icon-btn" data-fechar-modal aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <form id="form-produto" novalidate>
+      <div class="modal-body">
+        <div id="alerta-produto"></div>
+        <input type="hidden" id="prod-id">
+
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="prod-nome">Nome do produto <span class="req">*</span></label>
+            <input type="text" id="prod-nome" required>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field field--full">
+            <label for="prod-descricao">Descrição</label>
+            <textarea id="prod-descricao" placeholder="Composição, aplicação, medidas, certificações..."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="prod-categoria">Categoria</label>
+            <select id="prod-categoria"><option value="">Sem categoria</option></select>
+          </div>
+
+          <div class="field">
+            <label for="prod-unidade">Unidade de venda</label>
+            <input type="text" id="prod-unidade" placeholder="Ex.: Caixa com 12 unidades">
+          </div>
+
+          <div class="field">
+            <label for="prod-minimo">Pedido mínimo</label>
+            <input type="text" id="prod-minimo" placeholder="Ex.: 10 caixas">
+          </div>
+
+          <div class="field">
+            <label for="prod-ordem">Ordem de exibição</label>
+            <input type="number" id="prod-ordem" value="0" step="1">
+          </div>
+
+          <div class="field field--full">
+            <label>Fotos</label>
+            <div class="upload-area" id="area-upload">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5d7186" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <strong style="display:block;margin-top:.5rem">Clique ou arraste as imagens aqui</strong>
+              <p>Podem ser várias de uma vez. Cada foto é redimensionada para no máximo
+                 1200&nbsp;px e comprimida em JPEG antes do envio. A primeira é a capa.</p>
+              <input type="file" id="input-fotos" accept="image/*" multiple class="sr-only">
+            </div>
+            <div class="photo-grid" id="grade-fotos"></div>
+            <div id="status-upload" class="small muted" style="margin-top:.6rem"></div>
+          </div>
+
+          <div class="field">
+            <label class="checkbox-line">
+              <input type="checkbox" id="prod-ativo" checked>
+              <span>Ativo (visível no catálogo)</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label class="checkbox-line">
+              <input type="checkbox" id="prod-destaque">
+              <span>Destaque (aparece primeiro)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="btn btn--outline" data-fechar-modal>Cancelar</button>
+        <button type="submit" class="btn btn--primary" id="btn-salvar-produto">Salvar produto</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

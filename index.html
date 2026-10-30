@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skorpion — Importação para empresas e distribuição no atacado</title>
+<meta name="description" content="A Skorpion cuida do processo de importação da sua empresa de ponta a ponta e também importa e revende produtos no atacado. Trading e distribuição com um só interlocutor.">
+<meta name="theme-color" content="#0a2135">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Skorpion">
+<meta property="og:title" content="Skorpion — Importação para empresas e distribuição no atacado">
+<meta property="og:description" content="A Skorpion cuida do processo de importação da sua empresa de ponta a ponta e também importa e revende produtos no atacado. Trading e distribuição com um só interlocutor.">
+<meta property="og:url" content="https://skorpionimportexport.com.br/">
+<meta property="og:image" content="https://skorpionimportexport.com.br/assets/img/logo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================ TOPO ============================ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <a data-emp-link="tel" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-emp="telefone"></span>
+      </a>
+      <a data-emp-link="email" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span data-emp="email"></span>
+      </a>
+      <span class="small"><span data-emp="horario"></span></span>
+    </div>
+    <div class="topbar-tag">Comércio exterior &amp; distribuição B2B</div>
+  </div>
+</div>
+
+<!-- =========================== HEADER =========================== -->
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Skorpion">
+      <span class="brand-text">
+        <span class="brand-name">Skorpion</span>
+        <span class="brand-tag">Trading &amp; Distribuição</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="importacao.html">Importação</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="index.html#quem-somos">Quem somos</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--outline btn--sm cart-link" href="cotacao.html" aria-label="Minha cotação">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2 7 6H4a2 2 0 0 0-2 2.2l1 10A2 2 0 0 0 5 20h14a2 2 0 0 0 2-1.8l1-10A2 2 0 0 0 20 6h-3l-2-4"/><path d="M8 10v0M16 10v0"/></svg>
+        <span>Cotação</span>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="importacao.html#cotacao">Falar com um especialista</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero hero--home">
+  <canvas class="hero-canvas" id="hero3d" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badges">
+        <span class="hero-badge"><span class="dot"></span> Habilitação RADAR e processo completo</span>
+        <span class="hero-badge"><span class="dot"></span> Catálogo próprio para revenda</span>
+      </div>
+
+      <h1>Comércio exterior sem <br>atrito para a <em>sua empresa</em>.</h1>
+
+      <p class="hero-sub">
+        A Skorpion conduz a importação da sua empresa de ponta a ponta — do fornecedor
+        no exterior à entrega no seu CD — e também importa e distribui produtos no
+        atacado. Duas frentes, a mesma estrutura técnica, um só interlocutor.
+      </p>
+    </div>
+
+    <!-- === DUAS CHAMADAS PRINCIPAIS === -->
+    <div class="paths">
+      <a class="path-card path-card--import" href="importacao.html">
+        <span class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.8.8 0 0 0-.8.2l-.9.9a.8.8 0 0 0 .2 1.3L9 11.5 6.5 14H4.2a.8.8 0 0 0-.6.2l-.7.8a.8.8 0 0 0 .3 1.3L7 17.5l1.2 3.8a.8.8 0 0 0 1.3.3l.8-.7a.8.8 0 0 0 .2-.6V18l2.5-2.5 3.1 5.7a.8.8 0 0 0 1.3.2l.9-.9a.8.8 0 0 0 .2-.8z"/></svg>
+        </span>
+        <span class="path-kicker">Serviço de trading</span>
+        <h2>Importe com a Skorpion</h2>
+        <p>
+          Sua empresa quer trazer um produto de fora e não quer montar um departamento
+          de comex para isso. A gente assume o processo inteiro.
+        </p>
+        <ul class="path-list">
+          <li>Importação própria, por conta e ordem ou por encomenda</li>
+          <li>Logística internacional e desembaraço aduaneiro</li>
+          <li>Planejamento tributário e operações de câmbio</li>
+          <li>Sigilo total sobre fornecedores e custos</li>
+        </ul>
+        <span class="path-cta">
+          Ver como funciona
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+
+      <a class="path-card path-card--revenda" href="produtos.html">
+        <span class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </span>
+        <span class="path-kicker">Atacado / distribuição</span>
+        <h2>Revenda nossos produtos</h2>
+        <p>
+          Nós já importamos, nacionalizamos e mantemos estoque. Você compra pronto,
+          em volume de atacado, sem lidar com nenhuma etapa do processo.
+        </p>
+        <ul class="path-list">
+          <li>Catálogo com produtos já nacionalizados</li>
+          <li>Venda exclusiva para pessoa jurídica (CNPJ)</li>
+          <li>Pedido mínimo e unidade de venda claros por item</li>
+          <li>Monte sua lista e receba a cotação</li>
+        </ul>
+        <span class="path-cta">
+          Ver catálogo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== NÚMEROS ========================== -->
+<div class="container">
+  <div class="stats reveal" id="numeros"></div>
+</div>
+
+<!-- ========================= QUEM SOMOS ========================= -->
+<section class="section" id="quem-somos">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Quem somos</span>
+        <h2>Uma operação técnica entre o fornecedor lá fora e o seu estoque aqui.</h2>
+        <p class="lead">
+          A Skorpion atua em comércio exterior nas duas pontas do mesmo problema:
+          empresas que precisam importar com segurança e empresas que precisam
+          comprar produto importado pronto para revender.
+        </p>
+        <p>
+          Isso significa que o mesmo time que estrutura um processo de importação
+          sob medida também cuida do abastecimento do nosso catálogo de atacado.
+          Na prática, o cliente conversa com quem realmente conhece a mercadoria,
+          o regime tributário aplicável e o caminho que ela percorre até chegar.
+        </p>
+        <ul class="check-list">
+          <li><strong>Transparência no processo:</strong> você acompanha cada etapa, com documentos e prazos formalizados.</li>
+          <li><strong>Enquadramento correto:</strong> classificação fiscal, regime de importação e tributos analisados antes do embarque.</li>
+          <li><strong>Confidencialidade:</strong> dados de fornecedores, custos e volumes tratados sob sigilo contratual.</li>
+          <li><strong>Interlocutor único:</strong> um responsável técnico acompanha a operação do início ao fim.</li>
+        </ul>
+        <div class="btn-row mt-2">
+          <a class="btn btn--primary" href="importacao.html">Conhecer o serviço de importação</a>
+          <a class="btn btn--outline" href="produtos.html">Ver catálogo de revenda</a>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="2">
+        <div class="figure-frame">
+          <img src="assets/img/logo.jpg" alt="Logomarca Skorpion">
+          <div class="figure-caption">Trading &amp; distribuição — <span data-emp="cidadeUf"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== DUAS FRENTES ======================== -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Como trabalhamos</span>
+      <h2>Dois caminhos, dependendo do que a sua empresa precisa</h2>
+      <p>Se a dúvida for por onde começar, o resumo abaixo costuma resolver em trinta segundos.</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card card--hover reveal">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <span class="tag tag--blue">Importe com a Skorpion</span>
+        <h3 style="margin-top:.7rem">Você já sabe o que quer trazer</h3>
+        <p>
+          Existe um fornecedor, um produto ou uma oportunidade lá fora — e falta a
+          estrutura para executar. Assumimos cotação, contrato, câmbio, frete
+          internacional, desembaraço e a entrega final, no regime mais adequado
+          para a sua operação.
+        </p>
+        <ul class="check-list">
+          <li>Indicado para indústria, importador ocasional e empresas em expansão</li>
+          <li>Funciona mesmo sem RADAR habilitado no seu CNPJ</li>
+          <li>Escopo e responsabilidades definidos em contrato</li>
+        </ul>
+        <div class="btn-row mt-2">
+          <a class="btn btn--blue" href="importacao.html">Importe com a Skorpion</a>
+        </div>
+      </div>
+
+      <div class="card card--hover reveal" data-delay="2">
+        <div class="icon-box icon-box--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <span class="tag tag--amber">Revenda nossos produtos</span>
+        <h3 style="margin-top:.7rem">Você quer comprar pronto e revender</h3>
+        <p>
+          Nós já fizemos a importação, a nacionalização e a conferência da
+          mercadoria. Você escolhe os itens no catálogo, informa as quantidades e
+          recebe uma proposta comercial de atacado — sem burocracia alfandegária
+          do seu lado.
+        </p>
+        <ul class="check-list">
+          <li>Indicado para distribuidores, atacadistas e varejo</li>
+          <li>Venda exclusiva para empresas com CNPJ ativo</li>
+          <li>Preço sob cotação, conforme volume e frequência</li>
+        </ul>
+        <div class="btn-row mt-2">
+          <a class="btn btn--amber" href="produtos.html">Revenda nossos produtos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== SEGMENTOS ========================= -->
+<section class="section" id="segmentos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Segmentos</span>
+      <h2>Setores que atendemos</h2>
+      <p>
+        Operamos com produtos de diferentes naturezas, sempre respeitando as exigências
+        regulatórias de cada categoria (Anvisa, MAPA, Inmetro e demais anuências, quando aplicáveis).
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="segment reveal">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span>
+        <div><h4>Alimentos e bebidas</h4><p>Itens que exigem anuência sanitária e controle de rastreabilidade.</p></div>
+      </div>
+      <div class="segment reveal" data-delay="1">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+        <div><h4>Embalagens e insumos</h4><p>Matéria-prima e embalagem para indústria e envase.</p></div>
+      </div>
+      <div class="segment reveal" data-delay="2">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <div><h4>Máquinas e equipamentos</h4><p>Bens de capital, peças de reposição e linhas produtivas.</p></div>
+      </div>
+      <div class="segment reveal">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+        <div><h4>Higiene e cuidados pessoais</h4><p>Linhas de higiene, limpeza profissional e cosméticos.</p></div>
+      </div>
+      <div class="segment reveal" data-delay="1">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <div><h4>Utilidades e bens de consumo</h4><p>Bazar, utilidades domésticas e linhas sazonais.</p></div>
+      </div>
+      <div class="segment reveal" data-delay="2">
+        <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+        <div><h4>Construção e ferragens</h4><p>Materiais, acabamentos e ferramentas para o setor.</p></div>
+      </div>
+    </div>
+
+    <p class="small muted center mt-2">
+      Não encontrou o seu segmento? <a href="importacao.html#cotacao">Descreva a mercadoria</a>
+      e avaliamos a viabilidade técnica e tributária da operação.
+    </p>
+  </div>
+</section>
+
+<!-- ======================= DIFERENCIAIS ========================= -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Por que a Skorpion</span>
+      <h2>Previsibilidade é o que se contrata em comércio exterior</h2>
+      <p>Importação não se resolve no preço da mercadoria. Se resolve no custo final desembarcado e no prazo cumprido.</p>
+    </div>
+
+    <div class="confid">
+      <div class="confid-item reveal">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <h4>Custo desembarcado calculado antes</h4>
+        <p>Você recebe a simulação de tributos, frete, seguro e despesas locais antes de fechar o pedido.</p>
+      </div>
+      <div class="confid-item reveal" data-delay="1">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <h4>Prazos acompanhados</h4>
+        <p>Produção, embarque, chegada e desembaraço com status informado em cada etapa.</p>
+      </div>
+      <div class="confid-item reveal" data-delay="2">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <h4>Conformidade documental</h4>
+        <p>Classificação fiscal, licenças e anuências tratadas antes do embarque, não depois.</p>
+      </div>
+      <div class="confid-item reveal" data-delay="3">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h4>Sigilo comercial</h4>
+        <p>Fornecedores, volumes e margens sob confidencialidade, formalizada em NDA quando necessário.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CONTATO ========================== -->
+<section class="section" id="contato">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Contato</span>
+        <h2>Fale com a Skorpion</h2>
+        <p class="lead">
+          Escolha o caminho que corresponde à sua necessidade — o formulário certo
+          acelera a resposta, porque já chega com as informações que o time precisa
+          para avaliar a operação.
+        </p>
+
+        <div class="grid grid-2" style="gap:16px;margin-bottom:28px">
+          <a class="card card--hover" href="importacao.html#cotacao" style="padding:22px">
+            <span class="tag tag--blue">Importação</span>
+            <h4 style="margin:.6rem 0 .3rem">Quero importar</h4>
+            <p class="small muted mb-0">Formulário de cotação com produto, origem e volume.</p>
+          </a>
+          <a class="card card--hover" href="produtos.html" style="padding:22px">
+            <span class="tag tag--amber">Revenda</span>
+            <h4 style="margin:.6rem 0 .3rem">Quero revender</h4>
+            <p class="small muted mb-0">Monte sua lista no catálogo e envie para cotação.</p>
+          </a>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn--wa btn-wa" data-emp-link="whatsapp" data-wa-msg="Olá! Vim pelo site da Skorpion e gostaria de falar com o comercial." href="#">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23z"/></svg>
+            WhatsApp comercial
+          </a>
+          <a class="btn btn--outline" data-emp-link="email" href="#">Enviar e-mail</a>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="2">
+        <div class="card" style="padding:32px">
+          <h3>Dados da empresa</h3>
+          <dl class="spec-list" style="margin-top:1rem">
+            <div><dt>Razão social</dt><dd data-emp="razaoSocial"></dd></div>
+            <div><dt>CNPJ</dt><dd data-emp="cnpj"></dd></div>
+            <div><dt>Endereço</dt><dd><span data-emp="endereco"></span> — <span data-emp="bairro"></span></dd></div>
+            <div><dt>Cidade / UF</dt><dd><span data-emp="cidadeUf"></span> · <span data-emp="cep"></span></dd></div>
+            <div><dt>Telefone</dt><dd data-emp="telefone"></dd></div>
+            <div><dt>WhatsApp</dt><dd data-emp="whatsappLabel"></dd></div>
+            <div><dt>E-mail</dt><dd data-emp="email"></dd></div>
+            <div><dt>Comercial</dt><dd data-emp="emailComercial"></dd></div>
+            <div><dt>Atendimento</dt><dd data-emp="horario"></dd></div>
+          </dl>
+          <p class="tiny muted" style="margin-top:1.2rem">
+            Os campos destacados em amarelo ainda são placeholders — preencha em
+            <code>assets/js/config.js</code> e eles somem de todas as páginas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CTA BAND ========================= -->
+<section class="section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <span class="eyebrow">Próximo passo</span>
+      <h2>Vamos avaliar a sua operação?</h2>
+      <p>
+        Conte o que você precisa trazer ou o que pretende revender. Retornamos com
+        a análise de viabilidade e o desenho da operação.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--blue btn--lg" href="importacao.html#cotacao">Importe com a Skorpion</a>
+        <a class="btn btn--amber btn--lg" href="produtos.html">Revenda nossos produtos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FOOTER =========================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.jpg" alt="Skorpion">
+          <span class="brand-text">
+            <span class="brand-name">Skorpion</span>
+            <span class="brand-tag">Trading &amp; Distribuição</span>
+          </span>
+        </a>
+        <p>
+          Serviço de importação para empresas e distribuição de produtos importados
+          no atacado. Operação técnica, documentada e confidencial.
+        </p>
+      </div>
+
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="importacao.html">Importação</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="cotacao.html">Minha cotação</a></li>
+          <li><a href="index.html#quem-somos">Quem somos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="importacao.html#servicos">Gestão do processo</a></li>
+          <li><a href="importacao.html#servicos">Logística internacional</a></li>
+          <li><a href="importacao.html#servicos">Planejamento tributário</a></li>
+          <li><a href="importacao.html#servicos">Câmbio e financeiro</a></li>
+          <li><a href="importacao.html#modalidades">Modalidades de importação</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contato</h5>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><span data-emp="endereco"></span><br><span data-emp="cidadeUf"></span></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a data-emp-link="tel" href="#"><span data-emp="telefone"></span></a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a data-emp-link="email" href="#"><span data-emp="email"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-ano></span> Skorpion — <span data-emp="razaoSocial"></span>. CNPJ <span data-emp="cnpj"></span>.</span>
+      <span>Venda exclusiva para pessoa jurídica · <a href="privacidade.html">Privacidade</a> · <a href="admin.html">Área restrita</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.2/build/three.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/hero3d.js"></script>
+<script>
+  SK.renderNumeros('#numeros');
+  window.addEventListener('load', function () {
+    SkorpionHero3D.iniciar(document.getElementById('hero3d'), { modo: 'full' });
+  });
+</script>
+</body>
+</html>

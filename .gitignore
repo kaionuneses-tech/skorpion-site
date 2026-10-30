@@ -1,0 +1,7 @@
+# Ferramentas locais — não fazem parte do site
+graphify-out/
+.claude/
+publicar/
+
+# Original da logo (o site usa assets/img/logo.jpg)
+Logomarca Skorpion.jpeg

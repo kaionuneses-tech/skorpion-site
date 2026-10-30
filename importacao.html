@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Importação para empresas | Skorpion</title>
+<meta name="description" content="Gestão completa do processo de importação: logística internacional, planejamento tributário, câmbio e desembaraço. Importação própria, por conta e ordem e por encomenda.">
+<meta name="theme-color" content="#0a2135">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Skorpion">
+<meta property="og:title" content="Importação para empresas | Skorpion">
+<meta property="og:description" content="Gestão completa do processo de importação: logística internacional, planejamento tributário, câmbio e desembaraço. Importação própria, por conta e ordem e por encomenda.">
+<meta property="og:url" content="https://skorpionimportexport.com.br/importacao.html">
+<meta property="og:image" content="https://skorpionimportexport.com.br/assets/img/logo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <a data-emp-link="tel" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-emp="telefone"></span>
+      </a>
+      <a data-emp-link="email" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span data-emp="email"></span>
+      </a>
+      <span class="small"><span data-emp="horario"></span></span>
+    </div>
+    <div class="topbar-tag">Comércio exterior &amp; distribuição B2B</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Skorpion">
+      <span class="brand-text">
+        <span class="brand-name">Skorpion</span>
+        <span class="brand-tag">Trading &amp; Distribuição</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="importacao.html">Importação</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="index.html#quem-somos">Quem somos</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--outline btn--sm cart-link" href="cotacao.html" aria-label="Minha cotação">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2 7 6H4a2 2 0 0 0-2 2.2l1 10A2 2 0 0 0 5 20h14a2 2 0 0 0 2-1.8l1-10A2 2 0 0 0 20 6h-3l-2-4"/></svg>
+        <span>Cotação</span>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="#cotacao">Solicitar cotação</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero hero--page">
+  <canvas class="hero-canvas" id="hero3d" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero-inner">
+      <nav class="breadcrumb"><a href="index.html">Início</a><span>/</span>Importação</nav>
+      <span class="eyebrow">Serviço de trading</span>
+      <h1>Importe com a Skorpion</h1>
+      <p class="hero-sub">
+        Assumimos o processo de importação da sua empresa do primeiro contato com o
+        fornecedor até a entrega da mercadoria nacionalizada — no regime que fizer
+        mais sentido para o seu CNPJ, com custo desembarcado calculado antes da compra.
+      </p>
+      <div class="btn-row" style="margin-top:1.8rem">
+        <a class="btn btn--amber btn--lg" href="#cotacao">Solicitar cotação</a>
+        <a class="btn btn--ghost-light btn--lg" href="#processo">Ver o passo a passo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== SERVIÇOS ========================= -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Quatro frentes que sustentam a operação</h2>
+      <p>
+        Importar não é uma tarefa, é um conjunto de processos paralelos. Cada frente
+        abaixo tem responsável, documento e prazo — e todas conversam entre si.
+      </p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card card--hover reveal">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Gestão do processo de importação</h3>
+        <p>
+          A coordenação central da operação: quem fala com o fornecedor, quem emite
+          cada documento, quem acompanha o prazo e quem responde por eventuais
+          exigências da fiscalização.
+        </p>
+        <ul class="check-list">
+          <li>Análise de viabilidade técnica, comercial e tributária</li>
+          <li>Classificação fiscal (NCM) e verificação de tratamento administrativo</li>
+          <li>Licenças e anuências (Anvisa, MAPA, Inmetro, Exército, quando aplicável)</li>
+          <li>Emissão e conferência de Invoice, Packing List, BL/AWB e Certificado de Origem</li>
+          <li>Registro da DI/Duimp e acompanhamento do canal de parametrização</li>
+          <li>Desembaraço aduaneiro e liberação da carga</li>
+        </ul>
+      </div>
+
+      <div class="card card--hover reveal" data-delay="1">
+        <div class="icon-box icon-box--green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Logística internacional</h3>
+        <p>
+          Do galpão do fornecedor até o seu centro de distribuição, escolhendo o modal
+          e o Incoterm que equilibram custo, prazo e risco para a sua carga.
+        </p>
+        <ul class="check-list">
+          <li>Cotação de frete marítimo (FCL/LCL), aéreo e rodoviário internacional</li>
+          <li>Definição de Incoterms (EXW, FOB, CFR, CIF, DAP e demais)</li>
+          <li>Seguro internacional da carga</li>
+          <li>Armazenagem, movimentação portuária e taxas locais</li>
+          <li>Transporte nacional e entrega no destino final</li>
+          <li>Rastreio de embarque e aviso de chegada</li>
+        </ul>
+      </div>
+
+      <div class="card card--hover reveal" data-delay="2">
+        <div class="icon-box icon-box--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Planejamento tributário</h3>
+        <p>
+          O custo real de uma importação aparece na conta dos tributos. Trabalhamos
+          esse número antes do embarque, não depois da chegada.
+        </p>
+        <ul class="check-list">
+          <li>Simulação do custo desembarcado (II, IPI, PIS/COFINS-Importação, ICMS)</li>
+          <li>Avaliação de regimes especiais e benefícios estaduais aplicáveis</li>
+          <li>Análise de ex-tarifário quando não há similar nacional</li>
+          <li>Impacto do regime de importação escolhido na apuração de créditos</li>
+          <li>Conferência de valoração aduaneira e base de cálculo</li>
+          <li>Trabalho conjunto com a contabilidade do cliente</li>
+        </ul>
+      </div>
+
+      <div class="card card--hover reveal" data-delay="3">
+        <div class="icon-box icon-box--navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.8L7 14.3"/></svg>
+        </div>
+        <h3>Câmbio e financeiro</h3>
+        <p>
+          Pagamento ao exterior feito com contrato de câmbio formalizado, no momento
+          e na modalidade acordados — com previsibilidade sobre a taxa.
+        </p>
+        <ul class="check-list">
+          <li>Fechamento de câmbio de importação com instituições autorizadas</li>
+          <li>Modalidades à vista, antecipado e a prazo</li>
+          <li>Acompanhamento da exposição cambial durante o processo</li>
+          <li>Carta de crédito e remessa documentária, quando o negócio exigir</li>
+          <li>Conciliação entre invoice, DI/Duimp e contrato de câmbio</li>
+          <li>Prestação de contas de todos os desembolsos do processo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= MODALIDADES ======================== -->
+<section class="section section--soft" id="modalidades">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Modalidades</span>
+      <h2>Os três jeitos de importar — explicados sem juridiquês</h2>
+      <p>
+        A diferença entre eles está em <strong>quem é o importador no documento</strong>,
+        <strong>de quem é o dinheiro</strong> e <strong>de quem é a mercadoria</strong>
+        quando ela chega. Isso muda impostos, responsabilidade e risco.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="modality reveal">
+        <div class="modality-head">
+          <h3>Importação própria</h3>
+          <span class="tag tag--blue">Você é o importador</span>
+        </div>
+        <div class="modality-body">
+          <p>
+            Sua empresa importa em nome próprio, com RADAR habilitado, e a Skorpion
+            atua como assessoria técnica e operacional do processo.
+          </p>
+          <dl>
+            <dt>Quem aparece na DI</dt><dd>A sua empresa.</dd>
+            <dt>De quem é o recurso</dt><dd>Da sua empresa.</dd>
+            <dt>Quem é o dono da carga</dt><dd>A sua empresa, desde a origem.</dd>
+            <dt>Quando faz sentido</dt>
+            <dd>Você já tem (ou pretende ter) RADAR e quer manter os créditos tributários e o relacionamento direto com o fornecedor.</dd>
+            <dt>Atenção</dt>
+            <dd>Exige habilitação no Siscomex compatível com o volume e estrutura interna mínima para acompanhar o processo.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="modality reveal" data-delay="1">
+        <div class="modality-head">
+          <h3>Por conta e ordem</h3>
+          <span class="tag tag--amber">A Skorpion opera, a carga é sua</span>
+        </div>
+        <div class="modality-body">
+          <p>
+            A Skorpion executa o despacho aduaneiro em nome próprio, mas com recursos
+            do adquirente — a mercadoria é sua desde o início.
+          </p>
+          <dl>
+            <dt>Quem aparece na DI</dt><dd>A Skorpion, como importadora, identificando você como adquirente.</dd>
+            <dt>De quem é o recurso</dt><dd>Seu. Nós operamos com o dinheiro do adquirente.</dd>
+            <dt>Quem é o dono da carga</dt><dd>Você, desde a negociação com o fornecedor.</dd>
+            <dt>Quando faz sentido</dt>
+            <dd>Você quer o controle da negociação e do produto, mas prefere não assumir a operação aduaneira nem depender do seu próprio RADAR.</dd>
+            <dt>Atenção</dt>
+            <dd>O vínculo entre importadora e adquirente precisa ser declarado à Receita Federal. É um serviço, e é assim que se remunera.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="modality reveal" data-delay="2">
+        <div class="modality-head">
+          <h3>Por encomenda</h3>
+          <span class="tag tag--green">A Skorpion compra e revende para você</span>
+        </div>
+        <div class="modality-body">
+          <p>
+            A Skorpion importa com recursos próprios uma mercadoria previamente
+            encomendada por você e, depois de nacionalizada, vende para a sua empresa.
+          </p>
+          <dl>
+            <dt>Quem aparece na DI</dt><dd>A Skorpion, como importadora, identificando você como encomendante.</dd>
+            <dt>De quem é o recurso</dt><dd>Da Skorpion, durante toda a importação.</dd>
+            <dt>Quem é o dono da carga</dt><dd>Da Skorpion até a nacionalização; depois, uma venda no mercado interno para você.</dd>
+            <dt>Quando faz sentido</dt>
+            <dd>Você quer receber a mercadoria já nacionalizada, com nota fiscal brasileira, sem imobilizar caixa no exterior nem lidar com câmbio.</dd>
+            <dt>Atenção</dt>
+            <dd>O encomendante também é informado à Receita Federal. Não é "importação de terceiros": a encomenda é prévia e documentada.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="reveal" style="margin-top:3rem">Comparativo rápido</h3>
+    <div class="table-wrap reveal">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Importação própria</th>
+            <th>Por conta e ordem</th>
+            <th>Por encomenda</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Importador na DI/Duimp</strong></td>
+            <td>Sua empresa</td><td>Skorpion</td><td>Skorpion</td>
+          </tr>
+          <tr>
+            <td><strong>Origem dos recursos</strong></td>
+            <td>Sua empresa</td><td>Sua empresa (adquirente)</td><td>Skorpion</td>
+          </tr>
+          <tr>
+            <td><strong>Precisa de RADAR próprio?</strong></td>
+            <td>Sim</td><td>Sim, na modalidade compatível</td><td>Não</td>
+          </tr>
+          <tr>
+            <td><strong>Quem negocia com o fornecedor</strong></td>
+            <td>Sua empresa (com nosso apoio)</td><td>Sua empresa (com nosso apoio)</td><td>Skorpion</td>
+          </tr>
+          <tr>
+            <td><strong>Como você recebe</strong></td>
+            <td>Importação direta</td><td>Nota de entrada da operação</td><td>Venda no mercado interno</td>
+          </tr>
+          <tr>
+            <td><strong>Exposição cambial</strong></td>
+            <td>Sua</td><td>Sua</td><td>Da Skorpion</td>
+          </tr>
+          <tr>
+            <td><strong>Indicado para</strong></td>
+            <td>Importador recorrente</td><td>Quem quer controle sem estrutura</td><td>Quem quer simplicidade total</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tiny muted" style="margin-top:.9rem">
+      As modalidades por conta e ordem e por encomenda seguem a disciplina da Receita
+      Federal sobre importação por terceiros. A escolha final depende da análise do
+      seu caso e é formalizada em contrato antes do início da operação.
+    </p>
+  </div>
+</section>
+
+<!-- =========================== PROCESSO ========================= -->
+<section class="section section--navy" id="processo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Passo a passo</span>
+      <h2>Como a operação acontece, da conversa inicial à entrega</h2>
+      <p>Cada etapa tem entregável e responsável definidos. Você sabe sempre onde o processo está.</p>
+    </div>
+
+    <div class="split">
+      <div class="timeline timeline--navy reveal">
+        <div class="timeline-item">
+          <h4>Briefing e análise de viabilidade</h4>
+          <p>Entendemos o produto, o volume, a origem e o objetivo comercial. Verificamos NCM, tratamento administrativo e eventuais anuências antes de qualquer promessa de prazo.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Cotação e qualificação do fornecedor</h4>
+          <p>Cotamos com o seu fornecedor ou buscamos alternativas. Checamos existência, capacidade produtiva e histórico de exportação antes de seguir.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Simulação do custo desembarcado</h4>
+          <p>Você recebe a planilha com mercadoria, frete, seguro, tributos, despesas locais e nosso serviço — o número que realmente importa para decidir.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Contrato e proforma invoice</h4>
+          <p>Definimos a modalidade de importação, o Incoterm e as condições de pagamento. Tudo assinado antes de qualquer desembolso.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Câmbio e pagamento ao exterior</h4>
+          <p>Fechamento do contrato de câmbio e remessa ao fornecedor na modalidade acordada, com comprovação formal de cada etapa.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Produção, inspeção e embarque</h4>
+          <p>Acompanhamento da produção, inspeção pré-embarque quando contratada, booking do navio ou voo e conferência dos documentos de embarque.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Chegada e desembaraço aduaneiro</h4>
+          <p>Registro da declaração, acompanhamento do canal de parametrização, resposta a exigências e liberação da carga junto à Receita Federal.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Entrega e prestação de contas</h4>
+          <p>Transporte até o destino, entrega com conferência e fechamento do processo com todos os documentos e desembolsos demonstrados.</p>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="2">
+        <div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14)">
+          <h3 style="color:#fff">O que você recebe em cada operação</h3>
+          <ul class="check-list" style="margin-top:1.2rem">
+            <li style="color:#c3d6e5">Planilha de custo desembarcado antes da compra</li>
+            <li style="color:#c3d6e5">Cronograma com as datas-chave do processo</li>
+            <li style="color:#c3d6e5">Status de embarque e previsão de chegada atualizados</li>
+            <li style="color:#c3d6e5">Cópia de toda a documentação da importação</li>
+            <li style="color:#c3d6e5">Prestação de contas final, item a item</li>
+          </ul>
+          <hr style="border-color:rgba(255,255,255,.12)">
+          <h4 style="color:#fff">Ainda não tem RADAR?</h4>
+          <p class="small" style="color:#a4bccf">
+            Sem problema. Nas modalidades por encomenda e por conta e ordem a operação
+            pode começar mesmo assim — e, se fizer sentido para o seu volume, apoiamos
+            a habilitação da sua empresa no Siscomex em paralelo.
+          </p>
+          <a class="btn btn--amber" href="#cotacao">Quero uma análise do meu caso</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONFIDENCIALIDADE ===================== -->
+<section class="section" id="confidencialidade">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Confidencialidade</span>
+      <h2>O que é seu continua sendo seu</h2>
+      <p>
+        Em comércio exterior, informação é ativo. Fornecedor, preço de origem, volume
+        e margem são dados estratégicos — e é assim que tratamos cada um deles.
+      </p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card reveal">
+        <div class="icon-box icon-box--navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Acordo de confidencialidade (NDA)</h3>
+        <p>
+          Assinamos NDA antes de receber qualquer informação sensível — inclusive na
+          fase de sondagem, quando ainda não há contrato de operação. Se a sua empresa
+          tem um modelo próprio, trabalhamos com ele.
+        </p>
+      </div>
+
+      <div class="card reveal" data-delay="1">
+        <div class="icon-box icon-box--navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Seu fornecedor não vira nosso cliente</h3>
+        <p>
+          Quando você traz o fornecedor, ele continua sendo seu. A Skorpion não aborda
+          comercialmente fornecedores apresentados pelo cliente nem replica a operação
+          para terceiros, e isso está escrito em contrato.
+        </p>
+      </div>
+
+      <div class="card reveal" data-delay="2">
+        <div class="icon-box icon-box--navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Acesso restrito à informação</h3>
+        <p>
+          Dados de custo, margem e volume ficam restritos à equipe envolvida na sua
+          operação. Nada de painel compartilhado, planilha aberta ou grupo com
+          terceiros que não assinaram o mesmo compromisso.
+        </p>
+      </div>
+
+      <div class="card reveal" data-delay="3">
+        <div class="icon-box icon-box--navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Tratamento de dados e LGPD</h3>
+        <p>
+          Os dados enviados neste site são usados exclusivamente para analisar e
+          responder à sua solicitação. Não são vendidos nem cedidos, e você pode pedir
+          a exclusão a qualquer momento pelo nosso e-mail de contato.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FORMULÁRIO DE COTAÇÃO ================== -->
+<section class="section section--soft" id="cotacao">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Solicitar cotação</span>
+      <h2>Conte o que você precisa importar</h2>
+      <p>
+        Quanto mais específico for o preenchimento, mais rápida e precisa é a resposta.
+        Se ainda faltar alguma informação, tudo bem — preencha o que souber.
+      </p>
+    </div>
+
+    <div class="form-card reveal" id="bloco-form">
+      <div id="form-alerta"></div>
+
+      <form id="form-importacao" novalidate>
+        <h3>Dados da empresa</h3>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="empresa">Empresa (razão social ou nome fantasia) <span class="req">*</span></label>
+            <input type="text" id="empresa" name="empresa" required autocomplete="organization" placeholder="Ex.: Comercial Exemplo Ltda.">
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="cnpj">CNPJ <span class="req">*</span></label>
+            <input type="text" id="cnpj" name="cnpj" required data-cnpj placeholder="00.000.000/0001-00">
+            <span class="hint">Validamos os dígitos verificadores automaticamente.</span>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="contato_nome">Nome do responsável <span class="req">*</span></label>
+            <input type="text" id="contato_nome" name="contato_nome" required autocomplete="name" placeholder="Quem vai acompanhar o processo">
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="contato_email">E-mail corporativo <span class="req">*</span></label>
+            <input type="email" id="contato_email" name="contato_email" required autocomplete="email" placeholder="nome@suaempresa.com.br">
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="contato_telefone">Telefone / WhatsApp <span class="req">*</span></label>
+            <input type="text" id="contato_telefone" name="contato_telefone" required autocomplete="tel" placeholder="(00) 00000-0000">
+            <span class="error-msg"></span>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3>Sobre a importação</h3>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="produto">Produto que deseja importar <span class="req">*</span></label>
+            <input type="text" id="produto" name="produto" required placeholder="Descreva o produto, material, modelo ou aplicação">
+            <span class="hint">Se souber a NCM, pode incluir aqui — acelera a análise.</span>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="pais_origem">País de origem</label>
+            <input type="text" id="pais_origem" name="pais_origem" placeholder="Ex.: China, Alemanha, Estados Unidos">
+            <span class="hint">Não sabe ainda? Escreva "a definir".</span>
+          </div>
+
+          <div class="field">
+            <label for="volume_estimado">Volume estimado</label>
+            <input type="text" id="volume_estimado" name="volume_estimado" placeholder="Ex.: 1 contêiner de 40', 500 caixas, 2 toneladas">
+          </div>
+
+          <div class="field">
+            <label for="frequencia">Frequência da operação</label>
+            <select id="frequencia" name="frequencia">
+              <option value="">Selecione...</option>
+              <option value="unica">Compra única / pontual</option>
+              <option value="mensal">Recorrente — mensal</option>
+              <option value="trimestral">Recorrente — trimestral</option>
+              <option value="semestral">Recorrente — semestral</option>
+              <option value="anual">Recorrente — anual</option>
+              <option value="a_definir">Ainda a definir</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>A empresa já tem habilitação RADAR? <span class="req">*</span></label>
+            <div class="radio-row" data-required-radio="possui_radar">
+              <label class="radio-chip"><input type="radio" name="possui_radar" value="sim"><span>Sim, já temos</span></label>
+              <label class="radio-chip"><input type="radio" name="possui_radar" value="nao"><span>Não temos</span></label>
+              <label class="radio-chip"><input type="radio" name="possui_radar" value="nao_sei"><span>Não sei informar</span></label>
+            </div>
+            <span class="hint">Não ter RADAR não impede a operação — apenas muda a modalidade indicada.</span>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field field--full">
+            <label for="mensagem">Observações</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Prazo desejado, fornecedor já definido, exigências do seu cliente final, dúvidas sobre a modalidade..."></textarea>
+          </div>
+
+          <div class="field field--full">
+            <label class="checkbox-line">
+              <input type="checkbox" id="consentimento" required>
+              <span>
+                Autorizo a Skorpion a usar estes dados para analisar e responder à minha
+                solicitação, conforme a
+                <a href="privacidade.html" target="_blank" rel="noopener">política de privacidade</a>. <span class="req">*</span>
+              </span>
+            </label>
+            <span class="error-msg"></span>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <p class="tiny muted mb-0" style="max-width:340px">
+            Retornamos com a análise de viabilidade e, quando aplicável, com a simulação
+            de custo desembarcado.
+          </p>
+          <button class="btn btn--primary btn--lg" type="submit" id="btn-enviar">
+            Enviar solicitação
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Tela de sucesso -->
+    <div class="form-card reveal hide" id="bloco-sucesso">
+      <div class="form-success">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2>Solicitação enviada</h2>
+        <p class="lead">Recebemos os dados da sua operação e o time comercial vai analisar o caso.</p>
+        <div class="protocol">Protocolo: <strong id="protocolo">—</strong></div>
+        <p class="muted small">Guarde este número — ele identifica a sua solicitação no nosso atendimento.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn-wa" data-emp-link="whatsapp" data-wa-msg="Olá! Enviei uma solicitação de importação pelo site da Skorpion." href="#">Falar agora no WhatsApp</a>
+          <a class="btn btn--outline" href="produtos.html">Ver catálogo de revenda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.jpg" alt="Skorpion">
+          <span class="brand-text">
+            <span class="brand-name">Skorpion</span>
+            <span class="brand-tag">Trading &amp; Distribuição</span>
+          </span>
+        </a>
+        <p>Serviço de importação para empresas e distribuição de produtos importados no atacado.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="importacao.html">Importação</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="cotacao.html">Minha cotação</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Nesta página</h5>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#processo">Passo a passo</a></li>
+          <li><a href="#confidencialidade">Confidencialidade</a></li>
+          <li><a href="#cotacao">Solicitar cotação</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><span data-emp="endereco"></span><br><span data-emp="cidadeUf"></span></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a data-emp-link="tel" href="#"><span data-emp="telefone"></span></a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a data-emp-link="email" href="#"><span data-emp="email"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-ano></span> Skorpion — <span data-emp="razaoSocial"></span>. CNPJ <span data-emp="cnpj"></span>.</span>
+      <span>Venda exclusiva para pessoa jurídica · <a href="privacidade.html">Privacidade</a> · <a href="admin.html">Área restrita</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.140.2/build/three.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/hero3d.js"></script>
+<script src="assets/js/importacao.js"></script>
+</body>
+</html>

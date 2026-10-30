@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /cotacao.html
+
+Sitemap: https://skorpionimportexport.com.br/sitemap.xml
