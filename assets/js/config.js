@@ -45,7 +45,7 @@ const SKORPION = {
     horario:      'Segunda a sexta, das 8h às 18h',
 
     // Pessoa responsável pelos dados pessoais (LGPD) — aparece em privacidade.html.
-    encarregado:  '[Nome do encarregado de dados]',
+    encarregado:  'Danielle Modenezi Nunes',
 
     linkedin:     '',   // deixe '' para esconder o link
     instagram:    ''
