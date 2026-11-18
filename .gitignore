@@ -3,5 +3,8 @@ graphify-out/
 .claude/
 publicar/
 
+# Documentos internos (ex.: revisão jurídica) — nunca publicar no site
+*.docx
+
 # Original da logo (o site usa assets/img/logo.jpg)
 Logomarca Skorpion.jpeg
