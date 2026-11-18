@@ -95,7 +95,7 @@
       <div class="panel-head">
         <h2>Solicitações de importação</h2>
         <div class="btn-row">
-          <select class="chip" id="filtro-status-imp" style="padding:.5rem .9rem">
+          <select class="chip" id="filtro-status-imp" aria-label="Filtrar solicitações de importação por status" style="padding:.5rem .9rem">
             <option value="">Todos os status</option>
             <option value="novo">Novo</option>
             <option value="em_atendimento">Em atendimento</option>
@@ -115,7 +115,7 @@
       <div class="panel-head">
         <h2>Solicitações de revenda</h2>
         <div class="btn-row">
-          <select class="chip" id="filtro-status-rev" style="padding:.5rem .9rem">
+          <select class="chip" id="filtro-status-rev" aria-label="Filtrar solicitações de revenda por status" style="padding:.5rem .9rem">
             <option value="">Todos os status</option>
             <option value="novo">Novo</option>
             <option value="em_atendimento">Em atendimento</option>
@@ -137,7 +137,7 @@
         <div class="btn-row">
           <div class="search-box" style="flex:0 1 260px">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <input type="search" id="busca-produtos" placeholder="Buscar produto..." autocomplete="off">
+            <input type="search" id="busca-produtos" aria-label="Buscar produto" placeholder="Buscar produto..." autocomplete="off">
           </div>
           <button class="btn btn--primary btn--sm" id="btn-novo-produto">+ Novo produto</button>
         </div>
@@ -262,7 +262,7 @@
               <strong style="display:block;margin-top:.5rem">Clique ou arraste as imagens aqui</strong>
               <p>Podem ser várias de uma vez. Cada foto é redimensionada para no máximo
                  1200&nbsp;px e comprimida em JPEG antes do envio. A primeira é a capa.</p>
-              <input type="file" id="input-fotos" accept="image/*" multiple class="sr-only">
+              <input type="file" id="input-fotos" aria-label="Enviar fotos do produto" accept="image/*" multiple class="sr-only">
             </div>
             <div class="photo-grid" id="grade-fotos"></div>
             <div id="status-upload" class="small muted" style="margin-top:.6rem"></div>

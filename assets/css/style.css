@@ -16,21 +16,21 @@
 
   /* Azul do globo */
   --blue-700: #14618f;
-  --blue-600: #1b7fc4;
+  --blue-600: #1670b0;
   --blue-500: #2e93da;
   --blue-400: #58a8ff;
   --blue-300: #68d8ff;
   --blue-050: #eaf4fd;
 
   /* Trigo / âmbar */
-  --amber-700: #b96f0d;
+  --amber-700: #96590a;
   --amber-600: #e08a18;
   --amber-500: #f8a838;
   --amber-400: #fdc069;
   --amber-050: #fff5e6;
 
   /* Verde da folha */
-  --green-700: #5f7f42;
+  --green-700: #4d6a35;
   --green-600: #789858;
   --green-500: #98c858;
   --green-050: #f1f7e8;
@@ -39,7 +39,7 @@
   --ink: #0f2233;
   --ink-2: #33475b;
   --muted: #5d7186;
-  --muted-2: #8497a8;
+  --muted-2: #5f7385;
   --line: #e1e8ef;
   --line-2: #eef3f7;
   --bg: #ffffff;
@@ -106,6 +106,9 @@ ul, ol { margin: 0 0 1.1em; padding-left: 1.25em; }
 li { margin-bottom: .4em; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 :focus-visible { outline: 3px solid var(--blue-400); outline-offset: 2px; border-radius: 4px; }
+.skip-link { position: absolute; left: 16px; top: -80px; z-index: 200; padding: .7rem 1.1rem; border-radius: 8px; background: var(--navy-900); color: #fff; font-weight: 600; }
+.skip-link:focus { top: 12px; color: #fff; }
+#conteudo-principal:focus { outline: none; }
 
 /* ---------------------------- Utilitários -------------------------- */
 .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
@@ -127,7 +130,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   color: var(--blue-700); margin-bottom: 1rem;
 }
 .eyebrow::before { content: ''; width: 26px; height: 2px; background: var(--amber-500); border-radius: 2px; }
-.section--navy .eyebrow { color: var(--blue-300); }
+.section--navy .eyebrow, .hero .eyebrow, .cta-band .eyebrow { color: var(--blue-300); }
 
 .section-head { max-width: 720px; margin-bottom: clamp(32px, 4vw, 54px); }
 .section-head--center { margin-left: auto; margin-right: auto; text-align: center; }
@@ -186,7 +189,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .btn--outline { background: transparent; border-color: var(--line); color: var(--ink); }
 .btn--outline:hover { border-color: var(--navy-700); background: var(--bg-soft); color: var(--ink); }
 
-.btn--ghost-light { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .28); color: #fff; backdrop-filter: blur(6px); }
+.btn--ghost-light { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .28); color: #fff; }
 .btn--ghost-light:hover { background: rgba(255, 255, 255, .16); color: #fff; }
 
 .btn--sm { padding: .5rem .95rem; font-size: .86rem; border-radius: var(--radius-sm); }
@@ -329,18 +332,12 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   background: rgba(255, 255, 255, .055);
   border: 1px solid rgba(255, 255, 255, .15);
   border-radius: var(--radius-lg);
-  backdrop-filter: blur(14px) saturate(140%);
   overflow: hidden; text-decoration: none;
   transition: transform .28s var(--ease), border-color .28s var(--ease), background-color .28s var(--ease);
 }
 .path-card::before {
   content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
   background: var(--accent, var(--blue-400));
-}
-.path-card::after {
-  content: ''; position: absolute; right: -60px; top: -60px; width: 190px; height: 190px; border-radius: 50%;
-  background: radial-gradient(circle, var(--accent, var(--blue-400)), transparent 70%);
-  opacity: .14; transition: opacity .3s var(--ease);
 }
 .path-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, .09); border-color: rgba(255, 255, 255, .3); }
 .path-card:hover::after { opacity: .24; }
@@ -405,7 +402,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   font-size: clamp(1.7rem, 2.6vw, 2.2rem); font-weight: 800; color: var(--navy-800);
   letter-spacing: -.03em; line-height: 1.1;
 }
-.stat-value .suffix { color: var(--amber-500); }
+.stat-value .suffix { color: var(--amber-700); }
 .stat-label { font-size: .85rem; color: var(--muted); margin-top: .3rem; }
 
 /* ------------------------------ Cards ------------------------------ */
@@ -692,7 +689,7 @@ table.data tbody tr:hover { background: var(--bg-softer); }
 .qty-control button { width: 38px; height: 42px; border: 0; background: var(--bg-soft); font-size: 1.1rem; color: var(--navy-800); }
 .qty-control button:hover { background: #e8eef4; }
 .qty-control input { width: 62px; height: 42px; border: 0; border-left: 1px solid var(--line); border-right: 1px solid var(--line); text-align: center; font-weight: 600; }
-.qty-control input:focus { outline: none; }
+.qty-control input:focus-visible { outline: 3px solid var(--blue-400); outline-offset: -3px; }
 
 /* ----------------------------- Cotação ----------------------------- */
 .cart-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 32px; align-items: start; }
@@ -774,8 +771,8 @@ table.data tbody tr:hover { background: var(--bg-softer); }
 .req-grid div { font-size: .9rem; }
 .req-grid dt { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-2); }
 .req-grid dd { margin: .15rem 0 0; color: var(--ink); }
-.btn-wa { background: #1faa54; color: #fff; }
-.btn-wa:hover { background: #17903f; color: #fff; }
+.btn-wa { background: #0f7a3f; color: #fff; }
+.btn-wa:hover { background: #0b6332; color: #fff; }
 
 .modal-backdrop {
   position: fixed; inset: 0; z-index: 100; display: none;
@@ -823,14 +820,6 @@ table.data tbody tr:hover { background: var(--bg-softer); }
   padding: clamp(34px, 5vw, 58px);
   background: linear-gradient(135deg, var(--navy-800), var(--navy-950) 70%);
   color: #c9dbe9; box-shadow: var(--shadow-navy);
-}
-.cta-band::before {
-  content: ''; position: absolute; right: -80px; top: -80px; width: 340px; height: 340px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(248, 168, 56, .34), transparent 68%);
-}
-.cta-band::after {
-  content: ''; position: absolute; left: -60px; bottom: -120px; width: 320px; height: 320px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(88, 168, 255, .3), transparent 68%);
 }
 .cta-band > * { position: relative; z-index: 1; }
 .cta-band h2 { color: #fff; }

@@ -179,7 +179,7 @@ const SK = (function () {
       const bruto = input.value.replace(/\D/g, '');
       if (!bruto) return;
       if (!validarCNPJ(bruto)) {
-        marcarErro(input, 'CNPJ inválido — confira os dígitos.');
+        marcarErro(input, 'CNPJ inválido. Confira os dígitos.');
       } else {
         limparErro(input);
         input.closest('.field')?.classList.add('is-valid');
@@ -242,7 +242,7 @@ const SK = (function () {
         marcarErro(el, 'E-mail inválido.'); ok = false; primeiro = primeiro || el; return;
       }
       if (el.dataset.cnpj !== undefined && valor && !validarCNPJ(valor)) {
-        marcarErro(el, 'CNPJ inválido — confira os dígitos.'); ok = false; primeiro = primeiro || el;
+        marcarErro(el, 'CNPJ inválido. Confira os dígitos.'); ok = false; primeiro = primeiro || el;
       }
     });
 

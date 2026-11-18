@@ -37,7 +37,7 @@ const SKORPION = {
     email:        'financeiro@skorpionimportexport.com.br',
     emailComercial: 'financeiro@skorpionimportexport.com.br',
 
-    endereco:     'Rua Porto Alegre, 317 — Sala 102',
+    endereco:     'Rua Porto Alegre, 317, Sala 102',
     bairro:       'Itapuã',
     cidadeUf:     'Vila Velha / ES',
     cep:          'CEP 29101-680',
@@ -55,12 +55,12 @@ const SKORPION = {
      3. NÚMEROS DA EMPRESA (barra de credibilidade da home)
      Troque os valores entre colchetes pelos números reais.
      --------------------------------------------------------------- */
-  // shortcut: países, processos e clientes são estimativas provisórias — troque pelos números reais.
+  // Só números comprováveis. Ao ter os reais (países, processos, clientes), troque aqui.
   numeros: [
-    { valor: '6',   sufixo: '',  rotulo: 'anos de atuação em comércio exterior' },
-    { valor: '8',   sufixo: '+', rotulo: 'países de origem já operados' },
-    { valor: '150', sufixo: '+', rotulo: 'processos de importação concluídos' },
-    { valor: '90',  sufixo: '+', rotulo: 'clientes atendidos no Brasil' }
+    { valor: '6', sufixo: '', rotulo: 'anos de atuação em comércio exterior' },
+    { valor: '3', sufixo: '', rotulo: 'modalidades de importação, inclusive sem RADAR' },
+    { valor: '6', sufixo: '', rotulo: 'segmentos atendidos, com as anuências de cada um' },
+    { valor: '1', sufixo: '', rotulo: 'responsável técnico do início ao fim da operação' }
   ],
 
   /* ---------------------------------------------------------------

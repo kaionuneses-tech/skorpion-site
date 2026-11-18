@@ -123,7 +123,7 @@
               '</div>' +
               '<button class="btn ' + (noCarrinho ? 'btn--green' : 'btn--amber') + ' btn--lg" id="btn-add" ' +
                 'style="flex:1;min-width:210px">' +
-                (noCarrinho ? 'Já está na cotação — ver lista' : 'Adicionar à cotação') +
+                (noCarrinho ? 'Já está na cotação: ver lista' : 'Adicionar à cotação') +
               '</button>' +
             '</div>' +
             '<p class="tiny muted" style="margin:.9rem 0 0">' +
@@ -181,7 +181,7 @@
       btnAdd.className = 'btn btn--green btn--lg';
       btnAdd.style.flex = '1';
       btnAdd.style.minWidth = '210px';
-      btnAdd.textContent = 'Já está na cotação — ver lista';
+      btnAdd.textContent = 'Já está na cotação: ver lista';
       SK.toast(p.nome + ' foi adicionado à sua cotação.');
     });
   }

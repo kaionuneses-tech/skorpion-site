@@ -132,6 +132,7 @@ produto.html?id=      Ficha do produto, galeria e "adicionar à cotação"
 cotacao.html          Lista escolhida (localStorage) + dados da empresa → banco
 admin.html            Login, CRUD de catálogo e as duas filas de solicitações
 privacidade.html      Política de privacidade (LGPD)
+termos.html           Termos de uso (cotação não é pedido, foro, responsabilidades)
 robots.txt            Esconde admin e cotação do Google, aponta o sitemap
 sitemap.xml           Páginas públicas para o Google
 supabase-schema.sql   Todo o SQL: tabelas, RLS, triggers e bucket de fotos

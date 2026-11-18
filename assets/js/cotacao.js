@@ -154,7 +154,7 @@
       alerta.innerHTML =
         '<div class="alert alert--error">Não conseguimos registrar a cotação agora (' +
         SK.escapeHtml(err.message || 'erro desconhecido') +
-        '). Sua lista foi mantida — tente novamente em instantes.</div>';
+        '). Sua lista foi mantida. Tente novamente em instantes.</div>';
     }
   });
 
